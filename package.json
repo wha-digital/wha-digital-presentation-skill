@@ -1,0 +1,26 @@
+{
+  "name": "wha-digital-presentation-skill",
+  "version": "0.1.0",
+  "description": "npx installer for the WHA Digital presentation Codex skill",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "wha-digital-presentation-skill": "./bin/install.js"
+  },
+  "files": [
+    "bin",
+    "skill",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wha-digital/wha-digital-presentation-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wha-digital/wha-digital-presentation-skill/issues"
+  },
+  "homepage": "https://github.com/wha-digital/wha-digital-presentation-skill#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
