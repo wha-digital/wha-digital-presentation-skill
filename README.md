@@ -43,6 +43,12 @@ List every `SKILL.md` in the repo:
 ./scripts/list-skills.sh
 ```
 
+Link all skills from this checkout into Claude's local skill directory:
+
+```bash
+./scripts/link-skills.sh
+```
+
 Validate local skill discovery:
 
 ```bash
@@ -75,3 +81,4 @@ The `skills` CLI may create local `.agents/` and `skills-lock.json` files during
 - Keep `README.md` reference entries in sync with skill additions.
 - Keep install instructions based on `npx skills add owner/repo`; this repository is not an npm package.
 - Run `./scripts/list-skills.sh` and `npx skills add . --list` before committing changes.
+- Use `./scripts/link-skills.sh` only for local symlink-based testing with Claude.

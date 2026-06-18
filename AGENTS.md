@@ -12,6 +12,7 @@ Use the collection layout. Do not reintroduce a custom npm package installer unl
 - Keep each skill directory self-contained.
 - Add scripts, references, and assets inside the relevant skill directory only when the skill needs them.
 - Use `scripts/list-skills.sh` to list all skills in the repository.
+- Use `scripts/link-skills.sh` only for local symlink-based testing with Claude.
 
 ## Skill Rules
 
@@ -28,6 +29,12 @@ Before committing skill layout changes, run:
 ```bash
 ./scripts/list-skills.sh
 npx skills add . --list
+```
+
+To test the local Claude symlink workflow, run:
+
+```bash
+./scripts/link-skills.sh
 ```
 
 For an install test, use a temporary location or clean up generated local artifacts afterward:
